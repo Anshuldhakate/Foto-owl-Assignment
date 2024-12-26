@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# WhatsApp Web-like Chat Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based real-time chat application inspired by WhatsApp Web. The application includes a contact list, chat window, and message input box. It uses **IndexedDB** for offline capabilities and is styled to resemble a professional messaging app.
 
-## Available Scripts
+## Deployment Link-
+https://glowing-travesseiro-1a2f7b.netlify.app
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img width="947" alt="Screenshot 2024-11-26 191151" src="https://github.com/user-attachments/assets/965b0efd-d983-47c5-a129-001565c95a8b">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Contact List**: Displays a list of contacts on the left sidebar.
+- **Chat Window**: Shows the chat history of the selected contact.
+- **Message Input**: Allows users to send new messages.
+- **Real-Time Message Storage**: Integrates with InstantDB for storing messages in real-time.
+- **Offline Mode**: Uses IndexedDB to cache messages locally for offline access.
+- **Modern UI**: Designed with responsive and user-friendly CSS.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+    ```plaintext
+    src/
+    ├── components/
+    │   ├── ContactList.js
+    │   ├── ChatWindow.js
+    │   ├── MessageInput.js
+    ├── context/
+    │   ├── AppContext.js
+    ├── styles/
+    │   ├── App.css
+    │   ├── ContactList.css
+    │   ├── ChatWindow.css
+    │   ├── MessageInput.css
+    ├── App.js
+    ├── index.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
+ ### Clone the Repository
+``bash
+git clone https://github.com/Anshuldhakate/whatsapp-clone.git
+cd whatsapp-clone
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ ### Install Dependencies
+Run the following command to install the necessary packages:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+``bash
+npm install
 
-## Learn More
+# or
+yarn install
+Run the Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ ### Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+``bash
+npm start
+# or
+yarn start
+Open the app in your browser at http://localhost:3000.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
+- View the Contact List on the left side of the app.
+- Click on a contact to view the chat window on the right side.
+- Type messages in the input field and click "Send" to add messages to the chat.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
+## Technologies Used
+- React.js: Core framework for building the user interface.
+- IndexedDB: Provides offline storage for messages and contacts.
+- InstantDB: Used for real-time message storage and retrieval.
+- CSS3: Styled with responsive and modern techniques (Flexbox, Grid, etc.).
